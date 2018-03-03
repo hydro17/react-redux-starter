@@ -1,0 +1,29 @@
+body {
+  background-color: red;
+}
+
+.main-container{
+  width: 90%;
+  margin: 20px auto;
+  /* background-color: green; */
+}
+
+.video-detail {
+  display: flex;
+}
+
+#player {
+  flex:4;
+}
+
+#video-list {
+  flex:1;
+}
+
+/* .video-detail > div:nth-of-child(1) {
+  flex: 2;
+}
+
+.video-detail > VideoList:nth-of-child(2) {
+  flex: 1;
+} */

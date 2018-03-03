@@ -1,9 +1,10 @@
 import React from 'react';
+import VideoListItem from './video-list-item';
 
 const VideoList = (props) => {
   return (
-    <ul className='list-group col-md-4'>
-      {props.videos.map((video, index) => <li className='list-group-item' key={index}>{video.snippet.title}</li>)}
+    <ul className='list-group'>
+      {props.videos.map((video, index) => <VideoListItem video={video} />)}
     </ul>
   );
 }

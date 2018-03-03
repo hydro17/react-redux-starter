@@ -13,15 +13,17 @@ class App extends Component {
 
     YTSearch({ key: API_KEY, term: 'surfboards' }, (videos) => {
       this.setState({ videos });
-      console.log(this.state.videos[0].snippet.title);
     });
   }
 
   render() {
     return (
-      <div>
-        <SearchBar />
-        <VideoList videos={this.state.videos} />
+      <div className='main-container'>
+        <SearchBar /><br />
+        <div className='video-detail'>
+          <div id='player'>Player</div>
+          <VideoList id='video-list' videos={this.state.videos} />
+        </div>
       </div>
     );
   }
