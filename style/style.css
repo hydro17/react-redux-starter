@@ -3,7 +3,7 @@ body {
 }
 
 .main-container{
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   /* background-color: green; */
 }
@@ -12,11 +12,12 @@ body {
   display: flex;
 }
 
-#player {
-  flex:4;
+.video-detail > div:nth-child(1) {
+  border: 1px solid black;
+  flex:3;
 }
 
-#video-list {
+.video-detail > ul:nth-child(2) {
   flex:1;
 }
 

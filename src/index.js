@@ -21,8 +21,8 @@ class App extends Component {
       <div className='main-container'>
         <SearchBar /><br />
         <div className='video-detail'>
-          <div id='player'>Player</div>
-          <VideoList id='video-list' videos={this.state.videos} />
+          <div>Player</div>
+          <VideoList videos={this.state.videos} />
         </div>
       </div>
     );
