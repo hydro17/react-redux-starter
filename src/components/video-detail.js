@@ -16,8 +16,8 @@ const VideoDetail = ({ video }) => {
   //   return <div>Loading...</div>
   // }
 
-  console.log("VideoDetail: ");
-  console.log(video);
+  // console.log("VideoDetail: ");
+  // console.log(video);
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
 

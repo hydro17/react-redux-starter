@@ -24,7 +24,7 @@ class App extends Component {
     });
   }
 
-  handleSearchVideos(term1) {
+  handleOnVideoSearch(term1) {
     YTSearch({ key: API_KEY, term: term1 }, (videos) => {
       this.setState({
         videos,
@@ -36,7 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        <SearchBar searchVideos={this.handleSearchVideos.bind(this)} /><br />
+        {/* <SearchBar onVideoSearch={this.handleSearchVideos.bind(this)} /><br /> */}
+        <SearchBar onVideoSearch={this.handleOnVideoSearch.bind(this)} /><br />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           videos={this.state.videos}
