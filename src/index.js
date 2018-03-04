@@ -12,13 +12,13 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      term: 'surfboards',
       selectedVideo: {}
     };
 
-    YTSearch({ key: API_KEY, term: this.state.term }, (videos) => {
+    YTSearch({ key: API_KEY, term: 'surfboards' }, (videos) => {
       this.setState({
-        videos: videos,
+        // videos: videos,
+        videos,
         selectedVideo: videos[0]
       });
     });
@@ -27,7 +27,7 @@ class App extends Component {
   handleSearchVideos(term1) {
     YTSearch({ key: API_KEY, term: term1 }, (videos) => {
       this.setState({
-        videos: videos,
+        videos,
         selectedVideo: videos[0]
       });
     });
@@ -38,7 +38,9 @@ class App extends Component {
       <div className='container'>
         <SearchBar searchVideos={this.handleSearchVideos.bind(this)} /><br />
         <VideoDetail video={this.state.selectedVideo} />
-        <VideoList videos={this.state.videos} />
+        <VideoList
+          videos={this.state.videos}
+          onVideoSelect={selectedVideo => this.setState({ selectedVideo })} />
       </div>
     );
   }

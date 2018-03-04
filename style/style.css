@@ -12,10 +12,7 @@ div.embed-responsive-16by9 {
   background-color: gray;
 }
 
-/* .video-detail > div:nth-of-child(1) {
-  flex: 2;
+ul > li:hover {
+  background-color: lightgrey;
 }
 
-.video-detail > VideoList:nth-of-child(2) {
-  flex: 1;
-} */
