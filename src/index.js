@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search-bar';
 import VideoList from './components/video-list';
+import VideoDetail from './components/video-detail';
 const API_KEY = 'AIzaSyDqejb164mXGK-igUstESqPUxVsMKHBcmU';
 
 class App extends Component {
@@ -18,12 +19,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className='main-container'>
+      <div className='container'>
         <SearchBar /><br />
-        <div className='video-detail'>
-          <div>Player</div>
-          <VideoList videos={this.state.videos} />
-        </div>
+        <VideoDetail video={this.state.videos[0]} />
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }

@@ -8,17 +8,8 @@ body {
   /* background-color: green; */
 }
 
-.video-detail {
-  display: flex;
-}
-
-.video-detail > div:nth-child(1) {
-  border: 1px solid black;
-  flex:3;
-}
-
-.video-detail > ul:nth-child(2) {
-  flex:1;
+div.embed-responsive-16by9 {
+  background-color: gray;
 }
 
 /* .video-detail > div:nth-of-child(1) {
