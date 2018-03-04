@@ -12,18 +12,6 @@ const VideoDetail = ({ video }) => {
     return <div>Loading...</div>
   }
 
-  // Object.prototype.isEmpty1 = function () {
-  //   for (let prop in this)
-  //     if (this.hasOwnProperty(prop)) return false;
-  //   return true;
-  // }
-
-  // if (video.isEmpty1()) {
-  //   return <div>Loading...</div>
-  // }
-
-  // if (isEmpty(video)) return <div>Loading...</div>;
-
   // if (Object.keys(video).length === 0) {
   //   return <div>Loading...</div>
   // }
