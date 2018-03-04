@@ -41,10 +41,11 @@ class App extends Component {
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           videos={this.state.videos}
-          onVideoSelect={selectedVideo => this.setState({ selectedVideo })} />
+          onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+        />
       </div>
     );
   }
 }
 
-ReactDOM.render(<App />, document.querySelector('.container')); 
+ReactDOM.render(<App />, document.querySelector('.container1')); 
