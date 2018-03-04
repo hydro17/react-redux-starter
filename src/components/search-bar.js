@@ -17,7 +17,7 @@ class SearchBar extends Component {
           onChange={e => this.setState({ term: e.target.value })}
           onKeyDown={e => {
             // if (e.which === 13) this.props.onVideoSearch(this.state.term);
-            if (e.key === 'Enter') this.props.onVideoSearch(this.state.term);
+            if (e.key === 'Enter') this.props.onSearchTermChange(this.state.term);
           }}
         />
       </div>
